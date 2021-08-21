@@ -1,0 +1,38 @@
+{
+  "name": "rest-graphql",
+  "version": "1.0.0",
+  "description": "A simple nodejs project to draw comparison between Rest API vs GraphQL",
+  "main": "src/rest-app.ts",
+  "scripts": {
+    "dev": "nodemon src/rest-app.ts",
+    "build": "rm -rf build/ && prettier --write src/ && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:utsav09211/node-rest-graphql.git"
+  },
+  "keywords": [
+    "nodejs",
+    "rest",
+    "graphql"
+  ],
+  "author": "Utsav Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "nodemon": "^2.0.12",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^10.2.1",
+    "typeorm": "^0.2.37"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/mysql2": "github:types/mysql2",
+    "@types/node": "^16.7.1",
+    "@types/nodemon": "^1.19.1",
+    "typescript": "^4.3.5"
+  }
+}
