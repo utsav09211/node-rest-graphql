@@ -26,7 +26,7 @@ export const resolvers = {
                 await user.save();
                 return user.id;
             } catch (error) {
-                return false;
+                return null;
             }
         }
     }
